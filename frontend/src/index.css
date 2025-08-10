@@ -1,0 +1,48 @@
+/* Tailwind CSS v4 single import plus project utilities. */
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-900 hover:bg-gray-300;
+}
+
+.input {
+  @apply w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow p-4;
+}
+
+.badge {
+  @apply inline-block px-2 py-1 text-xs rounded;
+}
+
+.badge-green {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-red {
+  @apply bg-red-100 text-red-800;
+}
+
+

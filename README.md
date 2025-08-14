@@ -83,10 +83,6 @@ cd backend
 npm run seed
 ```
 
-Default admin credentials:
-- Email: `admin@library.com`
-- Password: `Admin123!`
-
 ## 5) Deployment (Free tiers)
 
 ### Backend on Render (recommended) or Railway

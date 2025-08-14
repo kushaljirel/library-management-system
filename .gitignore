@@ -24,6 +24,9 @@ frontend/dist
 .vscode/
 *.log
 
+#docs with admin identity
+documentation.html
+
 # OS
 Thumbs.db
 

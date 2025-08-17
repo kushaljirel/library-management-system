@@ -11,6 +11,12 @@ import BookForm from './pages/BookForm.jsx'
 import Users from './pages/Users.jsx'
 import Transactions from './pages/Transactions.jsx'
 import Settings from './pages/Settings.jsx'
+import { isTokenValid } from './utils/auth.js'
+
+function RootRedirect() {
+  const isAuthenticated = isTokenValid()
+  return <Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />
+}
 
 export default function App() {
   return (
@@ -18,7 +24,7 @@ export default function App() {
       <Navbar />
       <main className="flex-1 container py-6">
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/" element={<RootRedirect />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 

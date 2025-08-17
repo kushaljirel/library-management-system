@@ -10,6 +10,7 @@ import Books from './pages/Books.jsx'
 import BookForm from './pages/BookForm.jsx'
 import Users from './pages/Users.jsx'
 import Transactions from './pages/Transactions.jsx'
+import Settings from './pages/Settings.jsx'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/books" element={<Books />} />
             <Route path="/transactions" element={<Transactions />} />
+            <Route path="/settings" element={<Settings />} />
           </Route>
 
           <Route element={<ProtectedRoute adminOnly />}>
